@@ -279,7 +279,7 @@ if __name__ == "__main__":
     parser.add_argument("--dry-run", action="store", help="Configure the passed CraftSettings.ini and exit.")
     parser.add_argument("--version", action="version", version="%(prog)s master")
     parser.add_argument("--localDev", action="store", help="Path to a local directory to use instead of fetching from github")
-    parser.add_argument("--headless", action="store", help="Headless Mode (For CI Use)")
+    parser.add_argument("--headless", action="store_true", help="Headless Mode (For CI Use)")
 
     args = parser.parse_args()
     if args.root:
